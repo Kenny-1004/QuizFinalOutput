@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.addWrongAndCorrect{
+    display: flex;
+    font-size: 7px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+body{
+    background: rgb(255, 157, 173);
+}
+
+.quiz-container{
+    color: white;
+    justify-self: center;
+    align-self: center;
+    margin-top: 3rem;
+    padding: 20px;
+    background: transparent;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.question{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.answer-container{
+    justify-self: center;
+}
+
+.answer{
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: 500;
+    font-size:14px;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s;
+    background: transparent;
+    border: none;
+    background: rgba(255, 180, 180, 0.2);
+}
+.active{
+    background: rgba(255, 255, 255, 0.4);
+}
+.gif-img{
+    position: absolute;
+    z-index: -1;
+    scale: 1.6;
+}
+
+.answer:hover{
+    background: rgba(255, 255, 255, 0.4);
+}
+.answer:active{
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.submit-btn{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-self: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    transform: translate(0%,-50%);
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    background: rgb(255, 216, 223);
+    transition: 0.3s;
+}
+
+.submit-btn:hover{
+    background: pink;
+    scale: 1.1;
+}
+.submit-btn:active{
+    background: white;
+}
+
+
+
+
+.failed-the-quiz{
+    transform: translateX(-50%);
+    opacity: 0;
+    top: 10rem;
+    z-index: 5;
+    scale: 1.5;
+    position: absolute;
+    justify-self: center;
+    display: flex;
+}
+
+.passed-the-quiz{
+    transform: translateX(-50%);
+    opacity: 0;
+    top: 10rem;
+    z-index: 5;
+    scale: 1.1;
+    z-index: 3;
+    position: absolute;
+    justify-self: center;
+    display: flex;
+}
+
+.show-passed-or-failed{
+    transform: translateX(0%);
+    opacity: 100;
+}
+
